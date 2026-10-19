@@ -61,4 +61,6 @@ The script exits without changes when the latest release is already pinned. The 
 
 The upstream binary is patched with `autoPatchelfHook` and explicit RPATH entries so its runtime-extracted native addon can load `libpulse` and `libasound` on NixOS. `fix-dt-verdef.mjs` repairs the `DT_VERDEF` section after `patchelf` rewrites the dynamic section.
 
-The packaged software is MIT-licensed; see the [upstream repository](https://github.com/can1357/oh-my-pi).
+## License
+
+The packaging files are licensed under the MIT License; see [LICENSE](LICENSE). The packaged software is MIT-licensed; see the [upstream repository](https://github.com/can1357/oh-my-pi).
