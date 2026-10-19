@@ -59,7 +59,7 @@ The script exits without changes when the latest release is already pinned. The 
 
 ## Notes
 
-The upstream binary is patched with `autoPatchelfHook` and explicit RPATH entries so its runtime-extracted native addon can load `libpulse` and `libasound` on NixOS. `fix-dt-verdef.mjs` repairs the `DT_VERDEF` section after `patchelf` rewrites the dynamic section.
+The upstream binary is patched with `autoPatchelfHook` and explicit RPATH entries so its runtime-extracted native addon can load `libpulse` and `libasound` on NixOS. `fix-dt-verdef.mjs` repairs the `DT_VERDEF` section after `patchelf` rewrites the dynamic section. See [`docs/nix-patching.md`](docs/nix-patching.md) for full architectural analysis and ELF patching details.
 
 ## License
 
